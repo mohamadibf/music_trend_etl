@@ -1,0 +1,12 @@
+apache-airflow==2.8.1
+apache-airflow-providers-postgres
+apache-airflow-providers-amazon
+boto3==1.34.0
+requests==2.31.0
+pandas==2.1.4
+pyarrow==14.0.2
+sqlalchemy==2.0.25
+psycopg2-binary==2.9.9
+numpy==1.26.3
+confluent-kafka==2.3.0
+apache-flink==1.18.0
