@@ -26,7 +26,7 @@ x-airflow-common: &airflow-common
     POSTGRES_GOLD_PASSWORD: gold123
     # Flink
     FLINK_JOBMANAGER_URL: http://flink-jobmanager:8081
-    # Packages installés dans tous les conteneurs Airflow au démarrage
+    # Packages installés 
     _PIP_ADDITIONAL_REQUIREMENTS: "boto3 requests pandas pyarrow sqlalchemy psycopg2-binary confluent-kafka"
   volumes:
     - ./dags:/opt/airflow/dags
@@ -41,7 +41,7 @@ x-airflow-common: &airflow-common
       condition: service_healthy
 
 services:
-  # ─── ZOOKEEPER (requis par Kafka) ───────────────────────────────────────────
+  # ─── ZOOKEEPER ───────────────────────────────────────────
   zookeeper:
     image: confluentinc/cp-zookeeper:7.5.0
     container_name: zookeeper
